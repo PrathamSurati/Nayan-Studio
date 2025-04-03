@@ -11,8 +11,8 @@ const ShareLike = ({ heading, content, likeFrom }) => {
   const [isAnimating, setIsAnimating] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const BASE_URL = "http://localhost:8080";
-  // const BASE_URL = "https://ns-kfr5.onrender.com";
+  // const BASE_URL = "http://localhost:8080";
+  const BASE_URL = "https://nayan-studio-lqp1.onrender.com";
 
   const socketRef = useRef(null);
 
