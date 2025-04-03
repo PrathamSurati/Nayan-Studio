@@ -11,12 +11,12 @@ const server = http.createServer(app); // Create HTTP server
 const io = new Server(server, {
   // Initialize Socket.IO
   cors: {
-    origin: ["https://nayanstudio.onrender.com", "http://localhost:3000"], // Allow both Render & local development
+    origin: ["http://localhost:3000", "https://nayanstudio.onrender.com"], // Allow both Render & local development
     methods: ["GET", "POST"],
     credentials: true,
   },
 });
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 8080;
 
 // Connect to MongoDB
 connectDB();
@@ -25,7 +25,7 @@ connectDB();
 app.use(express.json());
 app.use(
   cors({
-    origin: ["https://nayanstudio.onrender.com", "http://localhost:3000"], // Allow both Render & local development
+    origin: ["http://localhost:3000", "https://nayanstudio.onrender.com"], // Allow both Render & local development
     methods: ["GET", "POST"],
     credentials: true,
   })

@@ -17,7 +17,7 @@ const sendMessage = async (
       secure: true,
       auth: {
         user: "prathamsurati27@gmail.com", // Your email address
-        pass: "ugrrfjmhcxllhaxmk", // App-specific password
+        pass: "mfocmisgenyrecyc", // App-specific password
       },
     });
 

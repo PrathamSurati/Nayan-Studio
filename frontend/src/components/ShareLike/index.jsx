@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import { io } from "socket.io-client";
-import { FcLike, FcLikePlaceholder } from "react-icons/fc";
 import { FaTwitter, FaWhatsapp, FaFacebook } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa"; // Import red heart icon
 import "./Share-Like-style.css";
@@ -12,8 +11,8 @@ const ShareLike = ({ heading, content, likeFrom }) => {
   const [isAnimating, setIsAnimating] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // const BASE_URL = "http://localhost:5000";
-  const BASE_URL = "https://ns-kfr5.onrender.com";
+  const BASE_URL = "http://localhost:8080";
+  // const BASE_URL = "https://ns-kfr5.onrender.com";
 
   const socketRef = useRef(null);
 
