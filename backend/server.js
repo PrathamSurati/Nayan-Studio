@@ -11,7 +11,7 @@ const server = http.createServer(app); // Create HTTP server
 const io = new Server(server, {
   // Initialize Socket.IO
   cors: {
-    origin: ["http://localhost:3000", "https://nayanstudio.onrender.com"], // Allow both Render & local development
+    origin: ["http://localhost:3000", "https://nayan-studio-sk3g.onrender.com"], // Allow both Render & local development
     methods: ["GET", "POST"],
     credentials: true,
   },
@@ -25,7 +25,7 @@ connectDB();
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://nayanstudio.onrender.com"], // Allow both Render & local development
+    origin: ["http://localhost:3000", "https://nayan-studio-sk3g.onrender.com"], // Allow both Render & local development
     methods: ["GET", "POST"],
     credentials: true,
   })
